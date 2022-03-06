@@ -1,0 +1,25 @@
+
+
+<main class="flexColumn flexCenter">
+
+  <h1 class="alignCenter">MoCaFi Balance Checker</h1>
+  <div class="container">
+    <div class="flexRow alignCenter">
+      <input type="text" placeholder="enter 16 digit card number" [(ngModel)]="cardNumber" (change)="nullPreviousMessage()">
+      <button (click)="checkBalance()">Check Balance</button>
+    </div>
+  </div>
+
+  <div class="container success" *ngIf="showBalance">
+    <div class="alignCenter" >
+      The balance for that account is {{balance}}
+    </div>
+  </div>
+
+  <div class="container error" *ngIf="hasErrors">
+    <div class="alignCenter" >
+      Sorry, we were unable to find an account for that card number
+    </div>
+  </div>
+
+</main>

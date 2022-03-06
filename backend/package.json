@@ -1,0 +1,9 @@
+{
+  "name": "mocafi",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.1.1",
+    "rxjs": "~7.4.0"
+  }
+}
